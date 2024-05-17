@@ -21,6 +21,7 @@ public class StudentController {
     public List<Student> GetStudents() {
         return studentService.getStudents();
     }
+
     @PostMapping("/student")
     public void SaveStudent(@RequestBody Student student){
         studentService.saveStudent(student);
