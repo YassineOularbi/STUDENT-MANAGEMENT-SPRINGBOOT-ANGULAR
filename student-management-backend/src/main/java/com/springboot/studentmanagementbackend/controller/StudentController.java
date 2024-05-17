@@ -4,10 +4,13 @@ import com.springboot.studentmanagementbackend.model.Student;
 import com.springboot.studentmanagementbackend.service.StudentServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.CrossOrigin;
+
 
 import java.util.List;
 import java.util.Optional;
 
+@CrossOrigin(origins = "*")
 @RestController
 public class StudentController {
 
