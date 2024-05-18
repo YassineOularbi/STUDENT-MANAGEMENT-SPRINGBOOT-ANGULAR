@@ -39,6 +39,20 @@
 }
 body{
     height: 100vh;
-    gap: 10px;
-    background: var(--background-light);
+    width: 100%;
+}
+::-webkit-scrollbar {
+    width: 5px;
+    height:5px;
+}
+  
+::-webkit-scrollbar-track {
+    background: var(--secondary-color); 
+    border-radius: 5px;
+}
+  
+::-webkit-scrollbar-thumb {
+   background: var(--primary-color); 
+   border-radius: 5px;
+   cursor: pointer;
 }
