@@ -1,0 +1,100 @@
+/* Admin */
+.student-home{
+    background-color: var(--sidebar-light);
+    height: 96%;
+    width: 180vh;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px;
+}
+.admin{
+    background-color: var(--background-light);
+    width: 100%;
+    height: 10%;
+    border-radius: 10px;
+    padding: 10px;
+}
+.admin fa-icon {
+    width: 30%;
+    height: 100%;
+    color: var(--secondary-color);
+    text-align: center;
+    align-content: center;
+    font-size: 22px;
+    cursor: pointer;
+    transform: var(--tran-05);
+}
+.admin fa-icon:hover{
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+    color: var(--primary-color);
+}
+.head-action{
+    width: 20%;
+    height: 100%;
+}
+.admin-profile{
+    width: 40%;
+    height: 100%;
+}
+.admin-profile .profile{
+    width: 60%;
+    height: 100%;
+}
+.admin-profile .profile .image{
+    position: relative;
+    height: 100%;
+    width: 20%;
+    text-align: center;
+    align-content: center;
+    border-radius: 100%;
+}
+.admin-profile .profile .online{
+    position: absolute;
+    top: 5px;
+    right: 0;
+    width: 7px;
+    height: 7px;
+    background-color: var(--primary-color);
+    border-radius: 100%;
+    outline: 1px solid white;
+}
+.admin-profile .profile img{
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    outline: 2px solid var(--secondary-color);
+}
+.admin-profile .profile .profile-info{
+    width: 75%;
+    height: 100%;
+}
+.admin-profile .profile .profile-info span{
+    font-size: 12px;
+}
+.admin-notif{
+    width: 40%;
+    height: 100%;
+}
+.search{
+    width: 30%;
+    height: 100%;
+    background-color: var(--sidebar-light);
+    border-radius: 5px;
+}
+.search fa-icon{
+    color: var(--tertiary-color);
+    width: 15%;
+    height: 100%;
+    font-size: 20px;
+}
+.search input{
+    width: 85%;
+    height: 80%;
+    background-color: transparent;
+    border: none;
+}
+.search input::placeholder{
+    font-size: 15px;
+    color: var(--secondary-color);
+}
