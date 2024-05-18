@@ -1,1 +1,44 @@
 /* You can add global styles to this file, and also import other style files */
+*{
+    font-family: "Poppins", sans-serif;
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+:root.dark{
+    --secondary-color: #9cc943;
+    --primary-color: #183862;
+    --tertiary-color:#9cc943;;
+    --sidebar-light: #18386286;
+    --background-light: #04162e;
+    --color-lightesse: #183862;
+}
+:root.light{
+    --primary-color: #9cc943;
+    --secondary-color: #183862;
+    --tertiary-color:#747f8e;
+    --background-light: #f2f5f8;
+    --sidebar-light: #dee3e8;
+    --color-lightesse: #18386257;
+}
+:root{
+    /* COLORS */
+    --primary-color: #9cc943;
+    --secondary-color: #183862;
+    --tertiary-color:#747f8e;
+    --light-color: #ffffff;
+    --background-light: #f2f5f8;
+    --sidebar-light: #dee3e8;
+    --color-lightesse: #18386257;
+    /* TRANSITION */
+    --tran-02 : all 0.2s ease;
+    --tran-03 : all 0.3s ease;
+    --tran-04 : all 0.4s ease;
+    --tran-05 : all 0.5s ease;
+}
+body{
+    height: 100vh;
+    gap: 10px;
+    background: var(--background-light);
+}
