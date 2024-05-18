@@ -1,4 +1,4 @@
-<section class="student-home d-flex flex-column justify-content-between">
+<section class="student-home d-flex flex-column">
     <div class="admin d-flex flex-row justify-content-between">
         <div class="head-action d-flex flex-row justify-content-center">
             <fa-icon [icon]="faNewspaper"></fa-icon>
@@ -6,7 +6,7 @@
             <fa-icon [icon]="faListCheck"></fa-icon>
         </div>
         <div class="search d-flex flex-row justify-content-center align-content-center align-items-center">
-            <i class="fa-solid fa-magnifying-glass"></i>
+            <fa-icon [icon]="faMagnifyingGlass"></fa-icon>
             <input class="col-8" id="search" type="text" placeholder="Search...">
         </div>
         <div class="admin-profile d-flex flex-row justify-content-between">
@@ -29,4 +29,5 @@
             </div>
         </div>
     </div>
+    <app-students></app-students>
 </section>
