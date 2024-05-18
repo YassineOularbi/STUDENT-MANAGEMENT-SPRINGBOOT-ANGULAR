@@ -1,0 +1,33 @@
+<div class="student">
+    <div class="head-student d-flex flex-row justify-content-between">
+        <h4>Student List</h4>
+        <select name="class-option" id="">
+            <option value="">Class 1</option>
+            <option value="">Class 2</option>
+        </select>
+    </div>
+    <div class="student-hidden">
+        <div class="student-table d-flex flex-column">
+            <div class="card-table-student d-flex flex-row justify-content-between align-items-center" *ngFor="let student of students">
+                <div class="info d-flex flex-row justify-content-between align-items-center">
+                    <img src="{{ student.studentProfilePicture }}" alt="">
+                    <span>{{ student.studentName }}</span>
+                </div>
+                <div class="dropdown">
+                    <button class="btn dropdown-toggle-split" type="button" id="dropdownMenuButton"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <fa-icon [icon]="faSlidersH"></fa-icon>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
+                        <li><a class="dropdown-item" href="#">View Detail</a></li>
+                        <li><a class="dropdown-item item-update" href="">Update</a></li>
+                        <li><a class="dropdown-item" href="${deleteLink}">Delete</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="student-action d-flex justify-content-end align-items-center">
+        <button class="btn" onclick="addStudent()">Add Student</button>
+    </div>
+</div>

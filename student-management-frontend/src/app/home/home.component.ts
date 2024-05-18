@@ -4,6 +4,7 @@ import { faInbox } from '@fortawesome/free-solid-svg-icons';
 import { faListCheck } from '@fortawesome/free-solid-svg-icons';
 import { faMoon } from '@fortawesome/free-solid-svg-icons';
 import { faBell } from '@fortawesome/free-solid-svg-icons'
+import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-home',
@@ -16,4 +17,5 @@ export class HomeComponent {
   faListCheck = faListCheck;
   faMoon = faMoon
   faBell = faBell;
+  faMagnifyingGlass = faMagnifyingGlass;
 }

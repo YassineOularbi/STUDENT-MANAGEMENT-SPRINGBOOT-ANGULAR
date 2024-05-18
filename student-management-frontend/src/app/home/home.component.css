@@ -6,6 +6,7 @@
     border-radius: 20px;
     padding: 10px;
     margin: 10px;
+    gap: 10px;
 }
 .admin{
     background-color: var(--background-light);
@@ -89,6 +90,7 @@
     font-size: 20px;
 }
 .search input{
+    outline: none;
     width: 85%;
     height: 80%;
     background-color: transparent;
