@@ -18,4 +18,5 @@ export class HomeComponent {
   faMoon = faMoon
   faBell = faBell;
   faMagnifyingGlass = faMagnifyingGlass;
+  searchFuction:any;
 }

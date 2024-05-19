@@ -12,6 +12,7 @@ import { AddStudentComponent } from './add-student/add-student.component';
 import { FormsModule } from '@angular/forms';
 import { UpdateStudentComponent } from './update-student/update-student.component';
 import { StudentDetailsComponent } from './student-details/student-details.component';
+import { SearchPipe } from './search.pipe';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { StudentDetailsComponent } from './student-details/student-details.compo
     StudentsComponent,
     AddStudentComponent,
     UpdateStudentComponent,
-    StudentDetailsComponent
+    StudentDetailsComponent,
+    SearchPipe
   ],
   imports: [
     BrowserModule,

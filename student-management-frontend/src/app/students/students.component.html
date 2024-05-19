@@ -1,6 +1,7 @@
 <div class="student">
     <div class="head-student d-flex flex-row justify-content-between">
         <h4>Student List</h4>
+        <!-- <input type="search"[(ngModel)]="searchText" name="search" id="search" class="search" aria-label="search"> -->
         <select name="class-option" id="">
             <option value="">Class 1</option>
             <option value="">Class 2</option>
@@ -8,7 +9,7 @@
     </div>
     <div class="student-hidden">
         <div class="student-table d-flex flex-column">
-            <div class="card-table-student d-flex flex-row justify-content-between align-items-center" *ngFor="let student of students">
+            <div class="card-table-student d-flex flex-row justify-content-between align-items-center" *ngFor="let student of students|search:searchText">
                 <div class="info d-flex flex-row justify-content-between align-items-center">
                     <img src="{{ student.studentProfilePicture }}" alt="">
                     <span>{{ student.studentName }}</span>

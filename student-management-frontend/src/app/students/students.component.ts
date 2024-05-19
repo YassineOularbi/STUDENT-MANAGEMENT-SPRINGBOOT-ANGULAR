@@ -12,6 +12,7 @@ import { OnInit } from '@angular/core';
 export class StudentsComponent implements OnInit{
   faSlidersH = faSlidersH;
   students: Object;
+  searchText:any;
 
   constructor(private studentService:StudentService){}
 
