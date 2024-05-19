@@ -15,6 +15,7 @@ export class StudentsComponent implements OnInit{
 
   constructor(private studentService:StudentService){}
 
+
   deleteStudent(id:number){
     this.studentService.deleteStudent(id).subscribe(() => {
       this.ngOnInit();
