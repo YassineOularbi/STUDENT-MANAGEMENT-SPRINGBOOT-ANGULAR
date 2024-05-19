@@ -40,7 +40,20 @@ public class StudentServiceImpl implements StudentService {
     }
 
     @Override
+    @Transactional
     public List<Student> getStudentsByName(String name) {
         return studentRepository.findStudentByStudentNameContains(name);
+    }
+
+    @Override
+    @Transactional
+    public List<Student> getStudentsOrderByAsc() {
+        return studentRepository.findAllByOrderByStudentNameAsc();
+    }
+
+    @Override
+    @Transactional
+    public List<Student> getStudentsOrderByDesc() {
+        return studentRepository.findAllByOrderByStudentNameDesc();
     }
 }
