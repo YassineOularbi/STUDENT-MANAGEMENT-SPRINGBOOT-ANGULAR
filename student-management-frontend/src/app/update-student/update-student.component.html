@@ -1,1 +1,49 @@
-<p>update-student works!</p>
+<div class="update-student">
+    <form #studentForm="ngForm" (ngSubmit)="UpdateStudent(studentForm)" *ngIf="student">
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <label for="studentIDNumber" class="form-label">ID Number:</label>
+                <input type="text" class="form-control bg-secondary" id="studentIDNumber" name="studentIDNumber" #studentIDNumber
+                    (ngModel)="studentIDNumber" [(ngModel)]="student.studentIDNumber" readonly>
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="studentName" class="form-label">Name:</label>
+                <input type="text" class="form-control" id="studentName" name="studentName" #studentName
+                    (ngModel)="studentName" [(ngModel)]="student.studentName">
+            </div>
+        </div>
+        <div class="mb-3">
+            <label for="studentEmail" class="form-label">Email:</label>
+            <input type="email" class="form-control" id="studentEmail" name="studentEmail" #studentEmail
+                (ngModel)="studentEmail" [(ngModel)]="student.studentEmail">
+        </div>
+        <div class="mb-3">
+            <label for="studentPhoneNumber" class="form-label">Phone Number:</label>
+            <input type="text" class="form-control" id="studentPhoneNumber" name="studentPhoneNumber"
+                #studentPhoneNumber (ngModel)="studentPhoneNumber" [(ngModel)]="student.studentPhoneNumber">
+        </div>
+        <div class="mb-3">
+            <label for="studentProfilePicture" class="form-label">Profile Picture:</label>
+            <input type="text" class="form-control" id="studentProfilePicture" name="studentProfilePicture"
+                #studentProfilePicture (ngModel)="studentProfilePicture" [(ngModel)]="student.studentProfilePicture">
+        </div>
+        <div class="row">
+            <div class="col-md-5 mb-3">
+                <label for="studentPCNumber" class="form-label">PC Number:</label>
+                <input type="text" class="form-control" id="studentPCNumber" name="studentPCNumber"
+                    #studentPCNumber (ngModel)="studentPCNumber" [(ngModel)]="student.studentPCNumber">
+            </div>
+            <div class="col-md-5 mb-3">
+                <label for="studentHasBike" class="form-label">Has Bike:</label>
+                <select class="form-select" id="studentHasBike" name="studentHasBike" #studentHasBike
+                    (ngModel)="studentHasBike" [(ngModel)]="student.studentHasBike">
+                    <option value="true">Yes</option>
+                    <option value="false">No</option>
+                </select>
+            </div>
+            <div class="col-md-2 mb-3 d-flex align-items-end">
+                <button type="submit" class="btn">Save</button>
+            </div>
+        </div>
+    </form>
+</div>
