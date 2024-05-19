@@ -7,17 +7,25 @@ import { HomeComponent } from './home/home.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { StudentsComponent } from './students/students.component';
 import { provideHttpClient } from '@angular/common/http';
+import { AppRoutingModule } from './app-routing.module';
+import { AddStudentComponent } from './add-student/add-student.component';
+import { FormsModule } from '@angular/forms';
+import { UpdateStudentComponent } from './update-student/update-student.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     SidebarComponent,
-    StudentsComponent
+    StudentsComponent,
+    AddStudentComponent,
+    UpdateStudentComponent
   ],
   imports: [
     BrowserModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [
     provideHttpClient(),

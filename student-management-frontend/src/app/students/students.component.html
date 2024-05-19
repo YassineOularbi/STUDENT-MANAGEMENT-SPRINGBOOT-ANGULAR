@@ -21,13 +21,13 @@
                     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
                         <li><a class="dropdown-item" href="#">View Detail</a></li>
                         <li><a class="dropdown-item item-update" href="">Update</a></li>
-                        <li><a class="dropdown-item" href="${deleteLink}">Delete</a></li>
+                        <li><button class="dropdown-item" (click)="deleteStudent(student.studentIDNumber)">Delete</button></li>
                     </ul>
                 </div>
             </div>
         </div>
     </div>
     <div class="student-action d-flex justify-content-end align-items-center">
-        <button class="btn" onclick="addStudent()">Add Student</button>
+        <button class="btn" routerLink="/add-student">Add Student</button>
     </div>
 </div>
