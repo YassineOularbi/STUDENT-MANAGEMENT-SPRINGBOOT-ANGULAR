@@ -1,5 +1,5 @@
 .student{
-    height: 82vh;
+    height: 80vh;
     background-color: var(--background-light);
     border-radius: calc(20px - 10px);
 }

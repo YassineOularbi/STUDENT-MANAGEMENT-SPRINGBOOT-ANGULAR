@@ -7,6 +7,7 @@ import { HomeComponent } from './home/home.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { StudentsComponent } from './students/students.component';
 import { provideHttpClient } from '@angular/common/http';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { provideHttpClient } from '@angular/common/http';
   ],
   imports: [
     BrowserModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    AppRoutingModule
   ],
   providers: [
     provideHttpClient(),

@@ -4,7 +4,7 @@
 .sidebar{
     background: var(--sidebar-light);
     height: 100%;
-    padding: 15px;
+    padding: 10px;
 }
 .menu-bar{
     height: 85%;
