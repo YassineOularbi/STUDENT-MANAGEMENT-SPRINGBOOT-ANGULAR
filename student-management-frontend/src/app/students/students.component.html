@@ -19,7 +19,7 @@
                         <fa-icon [icon]="faSlidersH"></fa-icon>
                     </button>
                     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
-                        <li><a class="dropdown-item" href="#">View Detail</a></li>
+                        <li><button class="dropdown-item" routerLink="/view-student/{{student.studentIDNumber}}">View Detail</button></li>
                         <li><button class="dropdown-item item-update" routerLink="/update-student/{{student.studentIDNumber}}">Update</button></li>
                         <li><button class="dropdown-item" (click)="deleteStudent(student.studentIDNumber)">Delete</button></li>
                     </ul>

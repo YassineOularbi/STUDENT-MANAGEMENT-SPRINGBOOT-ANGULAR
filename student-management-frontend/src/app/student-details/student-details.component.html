@@ -1,0 +1,34 @@
+<div class="view-student" *ngIf="student">
+    <div class="picture-name d-flex flex-column align-items-center justify-content-center align-content-center">
+        <div class="image align-items-center">
+            <img src="{{ student.studentProfilePicture }}" alt="">
+            <div class="online"></div>
+            <i class="edit fa-solid fa-user-pen"></i>
+        </div>
+        <span>{{student.studentName}}</span>
+        <div class="view-action">
+            <button class="btn active-action">Profile</button>
+            <button class="btn">Classe</button>
+            <button class="btn">Progress</button>
+            <button class="btn">Score</button>
+        </div>
+    </div>
+    <div class="all-info d-flex flex-row justify-content-center align-items-center">
+        <div class="student-info d-flex flex-column justify-content-evenly py-4">
+            <p>Matricule : <span>{{ student.studentIDNumber}}</span></p>
+            <p>Name : <span>{{student.studentName}}</span></p>
+            <p>Email : <span>{{student.studentEmail}}</span></p>
+            <p>Phone Number : <span>{{student.studentPhoneNumber}}</span></p>
+        </div>
+        <div class="pc-bike d-flex flex-row justify-content-center align-items-center">
+            <div class="pc d-flex flex-column align-content-center">
+                <img src="https://static.vecteezy.com/system/resources/previews/019/859/139/original/isometric-laptop-vector-3d-isometric-laptop-computer-transparent-background-illustration-png.png" alt="">
+                <span>{{student.studentPCNumber}}</span>
+            </div>
+            <div class="bike d-flex flex-column align-content-center">
+                <img src="https://i.ibb.co/C885rJn/pngimg-com-bicycle-PNG5366.png" alt="">
+                <span>{{student.studentHasBike}}</span>
+            </div>
+        </div>
+    </div>
+</div>
