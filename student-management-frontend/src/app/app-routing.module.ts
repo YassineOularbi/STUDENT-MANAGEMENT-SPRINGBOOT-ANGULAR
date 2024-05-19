@@ -12,6 +12,10 @@ const routes: Routes = [
     component: StudentsComponent
   },
   {
+    path: 'students/search/:name',
+    component: StudentsComponent
+  },
+  {
     path: 'add-student',
     component: AddStudentComponent
   },

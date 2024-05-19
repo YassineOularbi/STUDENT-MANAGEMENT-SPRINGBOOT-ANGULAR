@@ -43,4 +43,10 @@ public class StudentController {
     public Optional<Student> GetStudent(@PathVariable Long id){
         return studentService.getStudent(id);
     }
+
+    @Operation(summary = "get students by name contains")
+    @GetMapping("/students/{name}")
+    public List<Student> getStudentsByName(@PathVariable String name){
+        return studentService.getStudentsByName(name);
+    }
 }
