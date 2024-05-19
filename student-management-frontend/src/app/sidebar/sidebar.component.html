@@ -10,11 +10,11 @@
         <div class="menu d-flex flex-column justify-content-between">
             <div class="first-option">
                 <div class="menu-links">
-                    <li class="nav-link my-2" routerLink="/dashboard" routenLinkActive="active" >
+                    <a class="nav-link my-2" routerLink="/dashboard" >
                         <fa-icon [icon]="faBuildingColumns"></fa-icon>
                         <span class="text nav-text" >Dashboard</span>
-                    </li>
-                    <li class="nav-link my-2 active">
+                    </a>
+                    <li class="nav-link my-2 active" routerLink="/" routerLinkActive="active">
                         <fa-icon [icon]="faUserGraduate"></fa-icon>
                         <span class="text nav-text">Students</span>
                     </li>

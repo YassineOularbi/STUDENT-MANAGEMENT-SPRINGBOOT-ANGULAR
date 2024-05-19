@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './home/home.component';
 import { StudentsComponent } from './students/students.component';
 import { AddStudentComponent } from './add-student/add-student.component';
 import { UpdateStudentComponent } from './update-student/update-student.component';
+import { StudentDetailsComponent } from './student-details/student-details.component';
 
 const routes: Routes = [
   {
@@ -18,6 +18,11 @@ const routes: Routes = [
   {
   path: 'update-student/:id',
   component: UpdateStudentComponent
+  }
+  ,
+  {
+  path: 'view-student/:id',
+  component: StudentDetailsComponent
   }
 ];
 

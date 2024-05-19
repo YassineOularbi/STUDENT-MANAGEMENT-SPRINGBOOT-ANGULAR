@@ -1,0 +1,80 @@
+.view-student{
+    background-color: var(--background-light);
+    width: 100%;
+    height: 80vh;
+    border-radius: calc(20px - 10px);
+    padding: 10px 20px;
+}
+.view-student .picture-name{
+    margin-top: 10px;
+    height: 30%;
+    width: 100%;
+}
+.view-student .picture-name .image{
+    position: relative;
+    width: 9%;
+    height: 100%;
+}
+.view-student .picture-name .image .online{
+    position: absolute;
+    top: 15px;
+    right: 5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: var(--primary-color);
+    border: 1px solid white;
+}
+.view-student .picture-name .image .edit{
+    position: absolute;
+    bottom: 0;
+    right: -5px;
+}
+.view-student .picture-name img{
+    height: 80px;
+    width: 80px;
+    border-radius: 100%;
+    outline: 3px solid var(--secondary-color);
+}
+.view-student .picture-name span{
+    margin-top: 5px;
+    font-weight: bold;
+    font-size: 15px;
+}
+.view-student .picture-name .view-action button{
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--secondary-color);
+}
+.view-student .picture-name .view-action .active-action{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+.view-student .all-info{
+    width: 100%;
+    height: 70%;
+}
+.view-student .all-info .student-info{
+    width: 40%;
+    height: 100%;
+}
+.view-student .all-info .student-info p{
+    color: var(--secondary-color);
+    text-decoration: underline;
+}
+.view-student .all-info .pc-bike{
+    width: 40%;
+    height: 100%;
+    gap: 70px;
+}
+.view-student .all-info .pc-bike span{
+    color: var(--secondary-color);
+    text-align: center;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    padding: 3px;
+
+}
+.view-student .all-info .pc-bike img{
+    width: 160px;
+}
