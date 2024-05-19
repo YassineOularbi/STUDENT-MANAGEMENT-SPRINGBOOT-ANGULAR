@@ -51,12 +51,12 @@ public class StudentController {
     }
 
     @Operation(summary = "get students order by name asc")
-    @GetMapping("/students-order-asc")
+    @GetMapping("/students/asc")
     public List<Student> getStudentsOrderAsc(){
         return studentService.getStudentsOrderByAsc();
     }
     @Operation(summary = "get students order by name desc")
-    @GetMapping("/students-order-desc")
+    @GetMapping("/students/desc")
     public List<Student> getStudentsOrderDesc(){
         return studentService.getStudentsOrderByDesc();
     }
