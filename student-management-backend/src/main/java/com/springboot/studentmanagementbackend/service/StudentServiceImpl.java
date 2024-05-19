@@ -38,4 +38,9 @@ public class StudentServiceImpl implements StudentService {
     public void deleteStudent(Long id){
         studentRepository.deleteById(id);
     }
+
+    @Override
+    public List<Student> getStudentsByName(String name) {
+        return studentRepository.findStudentByStudentNameContains(name);
+    }
 }

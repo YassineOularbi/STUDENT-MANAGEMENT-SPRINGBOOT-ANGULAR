@@ -7,7 +7,7 @@
         </div>
         <div class="search d-flex flex-row justify-content-center align-content-center align-items-center">
             <fa-icon [icon]="faMagnifyingGlass"></fa-icon>
-            <input class="col-8" id="search" type="search" placeholder="Search..." [(ngModel)]="searchFuction" aria-label="search" >
+            <input class="col-8" id="search" type="search" placeholder="Search..." [(ngModel)]="searchText" (input)="onSearchChange()">
         </div>
         <div class="admin-profile d-flex flex-row justify-content-between">
             <div class="admin-notif d-flex flex-row justify-content-center">

@@ -21,9 +21,13 @@ export class StudentService {
     return this.httpClient.delete(this.API_URL+this.ENDOPOINT_STUDENT+"/"+id);
   }
   getStudent(id: number){
-    return this.httpClient.get(this.API_URL+this.ENDOPOINT_STUDENT+"/"+id)
+    return this.httpClient.get(this.API_URL+this.ENDOPOINT_STUDENT+"/"+id);
   }
   updateStudent(student){
     return this.httpClient.put(this.API_URL+this.ENDOPOINT_STUDENT, student);
   }
+  getStudentsByNameContains(name:any){
+    return this.httpClient.get(this.API_URL+this.ENDOPOINT_STUDENTS+"/"+name);
+  }
 }
+
