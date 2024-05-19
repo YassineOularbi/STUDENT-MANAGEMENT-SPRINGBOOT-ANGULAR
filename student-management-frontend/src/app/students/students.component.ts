@@ -1,8 +1,11 @@
-import { Component, SimpleChanges } from '@angular/core';
+import { Component } from '@angular/core';
 import { faSlidersH } from '@fortawesome/free-solid-svg-icons';
+import { faSort } from '@fortawesome/free-solid-svg-icons';
+import { faSortAlphaAsc, faSortAlphaDesc } from '@fortawesome/free-solid-svg-icons';
+
 import { StudentService } from '../student.service';
 import { OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-students',
@@ -12,11 +15,14 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class StudentsComponent implements OnInit{
   faSlidersH = faSlidersH;
+  faSort = faSort;
+  faSortAlphaAsc = faSortAlphaAsc;
+  faSortAlphaDesc = faSortAlphaDesc;
   students: Object;
   searchText:any;
   search: any;
 
-  constructor(private studentService:StudentService, private route: ActivatedRoute){}
+  constructor(private studentService:StudentService, private route: ActivatedRoute, private router: Router){}
 
 
   deleteStudent(id:number){
@@ -27,6 +33,17 @@ export class StudentsComponent implements OnInit{
   
   getAllStudents(){
     this.studentService.getStudents().subscribe((datas) => {
+      this.students = datas;
+    })
+  }
+
+  getStudentAsc(){
+    this.studentService.getStudentsOrderAsc().subscribe((datas)=>{
+      this.students = datas;
+    })
+  }
+  getStudentDesc(){
+    this.studentService.getStudentsOrderDesc().subscribe((datas)=>{
       this.students = datas;
     })
   }
@@ -43,10 +60,16 @@ export class StudentsComponent implements OnInit{
   
 
   ngOnInit(): void {
-    this.route.paramMap.subscribe(params => {
-      this.search = params.get('name');
-      this.searchStudentsByName(this.search);
-    });
+    if(this.router.url === "/students/desc"){
+      this.getStudentDesc();
+    } else if(this.router.url === "/students/asc"){
+      this.getStudentAsc();
+    } else {
+      this.route.paramMap.subscribe(params => {
+        this.search = params.get('name');
+        this.searchStudentsByName(this.search);
+      });
+    }
   }
   
 }

@@ -17,4 +17,8 @@ public interface StudentService {
 
     List<Student> getStudentsByName(String name);
 
+    List<Student> getStudentsOrderByAsc();
+
+    List<Student> getStudentsOrderByDesc();
+
 }

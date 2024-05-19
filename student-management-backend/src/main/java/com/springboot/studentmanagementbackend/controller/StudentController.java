@@ -49,4 +49,15 @@ public class StudentController {
     public List<Student> getStudentsByName(@PathVariable String name){
         return studentService.getStudentsByName(name);
     }
+
+    @Operation(summary = "get students order by name asc")
+    @GetMapping("/students/asc")
+    public List<Student> getStudentsOrderAsc(){
+        return studentService.getStudentsOrderByAsc();
+    }
+    @Operation(summary = "get students order by name desc")
+    @GetMapping("/students/desc")
+    public List<Student> getStudentsOrderDesc(){
+        return studentService.getStudentsOrderByDesc();
+    }
 }

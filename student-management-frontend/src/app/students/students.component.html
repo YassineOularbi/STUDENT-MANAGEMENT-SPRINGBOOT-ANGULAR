@@ -1,7 +1,17 @@
 <div class="student">
     <div class="head-student d-flex flex-row justify-content-between">
         <h4>Student List</h4>
-        <!-- <input type="search"[(ngModel)]="searchText" name="search" id="search" class="search" aria-label="search"> -->
+        <input type="search"[(ngModel)]="searchText" name="search" id="search" class="search" aria-label="search">
+        <div class="dropdown">
+            <button class="btn dropdown-toggle-split" type="button" id="dropdownMenuButton"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                <fa-icon [icon]="faSort"></fa-icon>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
+                <li class="d-flex flex-row align-items-center"><fa-icon [icon]="faSortAlphaAsc"></fa-icon><button class="dropdown-item" routerLink="/students/asc">Ascendant</button></li>
+                <li class="d-flex flex-row align-items-center"><fa-icon [icon]="faSortAlphaDesc"></fa-icon><button class="dropdown-item item-update" routerLink="/students/desc">Descandant</button></li>
+            </ul>
+        </div>
         <select name="class-option" id="">
             <option value="">Class 1</option>
             <option value="">Class 2</option>

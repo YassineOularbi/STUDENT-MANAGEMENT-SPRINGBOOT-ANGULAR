@@ -7,4 +7,6 @@ import java.util.List;
 
 public interface StudentRepository extends JpaRepository<Student, Long> {
     List<Student> findStudentByStudentNameContains(String name);
+    List<Student> findAllByOrderByStudentNameAsc();
+    List<Student> findAllByOrderByStudentNameDesc();
 }

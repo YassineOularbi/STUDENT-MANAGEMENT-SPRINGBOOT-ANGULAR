@@ -29,5 +29,11 @@ export class StudentService {
   getStudentsByNameContains(name:any){
     return this.httpClient.get(this.API_URL+this.ENDOPOINT_STUDENTS+"/"+name);
   }
+  getStudentsOrderAsc(){
+    return this.httpClient.get(this.API_URL+this.ENDOPOINT_STUDENTS+"/asc")
+  }
+  getStudentsOrderDesc(){
+    return this.httpClient.get(this.API_URL+this.ENDOPOINT_STUDENTS+"/desc")
+  }
 }
 
